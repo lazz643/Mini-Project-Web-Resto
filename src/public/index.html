@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resto ABC</title>
+    <link rel="stylesheet" href="/src/public/output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="home">
+      <div class="relative w-full h-screen">
+        <div class="absolute z-10 mt-0 w-full h-screen flex items-center overflow-hidden">
+          <img src="/src/public/img/jumbotron.jpg" fill class="object-cover w-full h-full brightness-35" />
+        </div>
+        <div class="fixed z-50 w-full h-max flex justify-between px-5 py-2.5 items-center bg-white/90 sm:hidden">
+          <a href="#home" class="font-bold text-2xl text-green-400">Resto ABC</a>
+          <button id="menu-toggle">
+            <i class="fa-solid fa-bars text-green-400 text-2xl cursor-pointer hover:bg-gray-300 p-1.5 rounded-sm"></i>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="fixed z-40 top-14 w-full bg-white/90 py-5 hidden sm:hidden">
+          <ul class="flex flex-col gap-3 text-center text-gray-700">
+            <li>
+              <a href="#tentang" id="nav2-tentang" class="block py-2 hover:text-green-400">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="#menu" id="nav2-menu" class="block py-2 hover:text-green-400">Menu</a>
+            </li>
+            <li>
+              <a href="#kontak" id="nav2-kontak" class="block py-2 hover:text-green-400">Kontak</a>
+            </li>
+            <li>
+              <a href="#hubungi" id="nav2-hubungi" class="block py-2 hover:text-green-400"> Hubungi Kami </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fixed z-50 hidden flex-row justify-between w-full h-20 px-10 py-10 items-center bg-white/90 sm:flex md:px-20 xl:px-40">
+          <a href="#home" class="font-bold text-2xl text-green-400">Resto ABC</a>
+          <ul class="text-gray-500 flex gap-5 items-center">
+            <li>
+              <a href="#tentang" id="nav-tentang" class="hover:text-green-400 cursor-pointer">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="#menu" id="nav-menu" class="hover:text-green-400 cursor-pointer">Menu</a>
+            </li>
+            <li>
+              <a href="#kontak" id="nav-kontak" class="hover:text-green-400 cursor-pointer">kontak</a>
+            </li>
+            <li>
+              <a href="#hubungi" id="nav-hubungi" class="p-2.5 bg-green-400 rounded-md text-white hover:bg-green-300 cursor-pointer">Hubungi Kami</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="absolute z-20 mt-0 w-full h-screen flex flex-col">
+          <div class="w-full flex items-center justify-center flex-1 px-10">
+            <h1 class="font-bold text-2xl text-center text-white sm:text-3xl lg:text-4xl">Nikmatnya Santapan, Sejuta Kesan</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="tentang" class="pt-32 sm:px-10 lg:px-20 xl:px-40">
+      <div class="grid w-full h-max lg:grid-cols-2">
+        <div class="grid p-5 w-full gap-5 sm:grid-cols-2">
+          <img src="/src/public/img/homeResto.jpg" class="w-full h-96 object-cover rounded-xl" />
+          <img src="/src/public/img/homeResto2.jpg" class="w-full h-96 object-cover rounded-xl" />
+        </div>
+        <div class="flex flex-col gap-2.5 p-5">
+          <h1 class="font-bold text-3xl text-green-400 lg:text-4xl">
+            Welcome to<br />
+            Resto ABC
+          </h1>
+          <p class="text-xl text-gray-500">
+            Resto ABC telah berdiri sejak tahun 1995 dan terus melayani pelanggan hingga saat ini. Kami bergerak di bidang kuliner dengan spesialisasi masakan khas Sunda dan Jawa. Restoran ini didirikan berdasarkan hasil observasi yang
+            menunjukkan masih terbatasnya rumah makan yang menyajikan hidangan autentik Sunda dan Jawa di kota Medan. Dengan cita rasa yang khas dan bahan-bahan berkualitas, Resto ABC berkomitmen untuk menghadirkan pengalaman kuliner
+            terbaik bagi setiap pelanggan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-32 sm:px-10 lg:px-20 xl:px-40">
+      <div class="flex flex-col w-full h-auto">
+        <span class="text-5xl text-gray-700 font-bold text-center">Pemesanan Online</span>
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <div class="flex flex-col justify-center items-center p-5 gap-5">
+            <i class="fa-solid fa-truck text-green-400 text-5xl"></i>
+            <span class="text-green-400 text-xl font-bold">Delivery Order</span>
+            <p class="text-center font-semibold text-gray-500">Layanan antar gratis setiap pembelian menu makanan kami. Area layanan hingga 15 KM</p>
+          </div>
+          <div class="flex flex-col justify-center items-center p-5 gap-5">
+            <i class="fa-solid fa-plate-wheat text-green-400 text-5xl"></i>
+            <span class="text-green-400 text-xl font-bold">Ala Carte</span>
+            <p class="text-center font-semibold text-gray-500">Menikmati hidangan kami langsung di rumah/kantor Anda. Minimal order Rp500,000.-</p>
+          </div>
+          <div class="flex flex-col justify-center items-center p-5 gap-5">
+            <i class="fa-solid fa-utensils text-green-400 text-5xl"></i>
+            <span class="text-green-400 text-xl font-bold">Prasmanan</span>
+            <p class="text-center font-semibold text-gray-500">Untuk setiap acara spesial Anda. Informasi dapat langsung hubungi kantor kami.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="pt-32 sm:px-10 lg:px-20 xl:px-40">
+      <div class="flex flex-col items-center justify-center">
+        <span class="text-5xl text-center text-gray-700 font-bold">Menu Kami</span>
+      </div>
+      <div class="flex gap-5 justify-center mt-10 px-5">
+        <button id="food-toggle" class="flex gap-1.5 items-center justify-center w-40 rounded-md font-bold text-white bg-green-400 scale-120 hover:bg-green-400 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-bowl-food"></i>
+          Makanan
+        </button>
+        <button id="drink-toggle" class="flex gap-1.5 items-center justify-center w-40 rounded-md font-bold text-green-400 hover:bg-green-400 hover:text-white cursor-pointer">
+          <i class="fa-solid fa-martini-glass-citrus"></i>
+          Minuman
+        </button>
+      </div>
+      <div id="food-menu" class="p-5 grid gap-5 mt-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://awsimages.detik.net.id/community/media/visual/2023/05/04/resep-pepes-ayam-bumbu-merah_43.jpeg?w=1200" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Pepes Ayam</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://www.dapurkobe.co.id/wp-content/uploads/empal-gepuk-1.jpg" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Ayam goreng bumbu empal</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://awsimages.detik.net.id/community/media/visual/2023/10/09/resep-pepes-tahu-kemangi_43.jpeg?w=1200" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Pepes Tahu</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://www.batiqa.com/upload/news/l/whatsapp-image-2019-08-01-at-130546-1_edpn7.jpeg" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Empal Gentong</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://pondokescendol.com/wp-content/uploads/2023/02/gudeg.png" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Gudeg</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://down-id.img.susercontent.com/file/dace98773f219c2455eebd61ff8f8688" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Soto lamongan</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://www.unileverfoodsolutions.co.id/dam/global-ufs/mcos/SEA/calcmenu/recipes/ID-recipes/rice-dishes/nasi-rawon/main-header.jpg" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Rawon</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://www.masakapahariini.com/wp-content/uploads/2021/07/Nasi-Goreng-Spesial-Ayam-Kecombrang.jpg" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Nasi goreng jawa</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="drink-menu" class="hidden p-5 gap-5 mt-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://pondokescendol.com/wp-content/uploads/2023/02/es-cendol.png" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Cendol</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://muthebogara.blog/wp-content/uploads/2020/07/Copy-of-muthebogara.blog-2024-09-10T072715.719.jpg" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Sinom</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img
+              src="https://cdn0-production-images-kly.akamaized.net/opQqoJx2TdEJhPnCllJkc6Mv_7E=/181x0:848x667/1200x1200/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4779951/original/012164100_1711012155-shutterstock_2350709701.jpg"
+              full
+              class="object-cover w-full h-full"
+            />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Es doger</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+        <div class="flex flex-col h-74 bg-gray-200 rounded-md overflow-hidden items-center hover:scale-105 shadow-xl">
+          <div class="w-full h-40">
+            <img src="https://serikatnews.com/wp-content/uploads/2023/01/3436913500.jpg" full class="object-cover w-full h-full" />
+          </div>
+          <div class="flex flex-col flex-1 gap-2.5 px-4 items-center">
+            <div class="flex-1 flex mt-2.5">
+              <span class="text-xl font-bold text-gray-700 text-center">Teh</span>
+            </div>
+            <button class="p-2.5 bg-green-400 rounded-md text-white font-bold mb-4">Order Online</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      const foodToggle = document.getElementById("food-toggle");
+      const drinkToggle = document.getElementById("drink-toggle");
+      const foodMenu = document.getElementById("food-menu");
+      const drinkMenu = document.getElementById("drink-menu");
+      drinkToggle.addEventListener("click", () => {
+        foodMenu.classList.add("hidden");
+        foodMenu.classList.remove("grid");
+        drinkMenu.classList.add("grid");
+        drinkMenu.classList.remove("hidden");
+
+        drinkToggle.classList.add("bg-green-400");
+        drinkToggle.classList.add("text-white");
+        drinkToggle.classList.add("scale-120");
+        foodToggle.classList.remove("bg-green-400");
+        foodToggle.classList.remove("text-white");
+        foodToggle.classList.add("text-green-400");
+        foodToggle.classList.remove("scale-120");
+      });
+      foodToggle.addEventListener("click", () => {
+        foodMenu.classList.remove("hidden");
+        foodMenu.classList.add("grid");
+        drinkMenu.classList.remove("grid");
+        drinkMenu.classList.add("hidden");
+
+        foodToggle.classList.add("bg-green-400");
+        foodToggle.classList.add("text-white");
+        foodToggle.classList.add("scale-120");
+        drinkToggle.classList.remove("bg-green-400");
+        drinkToggle.classList.remove("text-white");
+        drinkToggle.classList.remove("scale-120");
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.body.querySelectorAll("header, section, footer");
+        const navLinks = document.querySelectorAll("ul a");
+
+        function changeActiveNav() {
+          let scrollY = window.scrollY;
+
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 30;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute("id");
+
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+              navLinks.forEach((link) => {
+                link.classList.remove("text-green-400");
+              });
+              document.querySelector(`#nav-${sectionId}`)?.classList.add("text-green-400");
+              document.querySelector(`#nav2-${sectionId}`)?.classList.add("text-green-400");
+            }
+          });
+        }
+
+        window.addEventListener("scroll", changeActiveNav);
+      });
+    </script>
+
+    <section id="kontak" class="pt-32 sm:px-10 lg:px-20 xl:px-40">
+      <div class="w-full h-max flex flex-col">
+        <h1 class="text-5xl text-gray-700 font-bold text-center">Resto ABC</h1>
+        <div class="mt-10 grid md:grid-cols-2 p-5 md:gap-5">
+          <div class="flex flex-col">
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Kota Medan - Berjaya Sisingamangaraja<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Kota Medan - J-City<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Kota Medan - Ringroad<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Kota Medan - Pattimura<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Kota Medan - Adam Malik 40<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Jakarta - Cikini Raya<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Jakarta - Pluit Putra Raya<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Lampung - Lampung<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Kep. Riau - Ahmad Yani<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+            <span class="text-xl text-gray-500 mb-2.5"
+              >Jawa Barat - Cikampek Rest Area KM. 62<br />
+              <span class="text-xl font-bold text-green-400">6282260987799</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-32 sm:px-10 lg:px-20 xl:px-40">
+      <div class="w-full grid gap-5 p-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="w-full flex flex-col gap-2.5 rounded-lg overflow-hidden">
+          <img src="/src/public/img/homeResto.jpg" alt="resto1" class="object-cover w-full h-96" />
+          <h4 class="text-xl text-gray-700 font-bold">Medan</h4>
+        </div>
+        <div class="w-full flex flex-col gap-2.5 rounded-lg overflow-hidden">
+          <img src="/src/public/img/homeRestoB.jpg" alt="resto1" class="object-cover w-full h-96" />
+          <h4 class="text-xl text-gray-700 font-bold">Pekanbaru</h4>
+        </div>
+        <div class="w-full flex flex-col gap-2.5 rounded-lg overflow-hidden">
+          <img src="/src/public/img/homeRestoC.png" alt="resto1" class="object-cover w-full h-96" />
+          <h4 class="text-xl text-gray-700 font-bold">Lampung</h4>
+        </div>
+        <div class="w-full flex flex-col gap-2.5 rounded-lg overflow-hidden">
+          <img src="/src/public/img/homeRestoD.jpg" alt="resto1" class="object-cover w-full h-96" />
+          <h4 class="text-xl text-gray-700 font-bold">Jakarta</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="hubungi" class="pt-32 sm:px-10 lg:px-20 md:px-40 xl:px-50">
+      <div class="w-full h-max flex flex-col items-center px-5">
+        <h1 class="text-5xl text-gray-700 font-bold text-center">Hubungi Kami</h1>
+        <div class="flex mt-10 items-center w-full xl:px-40">
+          <form class="flex flex-col gap-5 w-full shadow-xl items-center p-10 rounded-md">
+            <input type="text" name="nama" id="inputNama" placeholder="Username" class="p-2.5 bg-gray-300 rounded-md w-full md:p-5" />
+            <input type="tel" name="noTelp" id="inputNoTelp" placeholder="No. Telp" class="p-2.5 bg-gray-300 rounded-md w-full md:p-5" />
+            <input type="email" name="email" id="inputEmail" placeholder="Email" class="p-2.5 bg-gray-300 rounded-md w-full md:p-5" />
+            <input type="text" name="subject" id="inputSubjet" placeholder="Subject" class="p-2.5 bg-gray-300 rounded-md w-full md:p-5" />
+            <textarea name="pesan" id="inputPesan" placeholder="Pesan" rows="2" class="p-2.5 bg-gray-300 rounded-md w-full md:p-5"></textarea>
+            <input type="submit" class="bg-green-400 p-2 text-white rounded-md w-60 cursor-pointer hover:bg-green-300" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pt-32">
+      <div class="w-full px-8 py-20 bg-black/95 flex flex-col gap-10 md:px-20 md:py-10 lg:px-20 xl:px-45 xl:py-15">
+        <div class="w-full grid gap-14 sm:grid-cols-2 md:gap-14 lg:grid-cols-3 lg:gap-30">
+          <div class="flex flex-col gap-4">
+            <h2 class="text-lg font-bold text-white">Resto ABC</h2>
+            <p class="text-md text-gray-300">Resto ABC telah berdiri sejak tahun 1995 dan terus melayani pelanggan hingga saat ini. Kami bergerak di bidang kuliner dengan spesialisasi masakan khas Sunda dan Jawa.</p>
+            <div class="flex gap-2">
+              <button class="w-10 h-10 rounded-full bg-green-400 cursor-pointer hover:bg-green-300">
+                <i class="fa-brands fa-facebook-f text-white"></i>
+              </button>
+              <button class="w-10 h-10 rounded-full bg-green-400 cursor-pointer hover:bg-green-300">
+                <i class="fa-brands fa-instagram text-white"></i>
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-lg font-bold text-white">Open Hours</h2>
+            <div class="flex justify-between">
+              <div class="flex flex-col gap-2">
+                <span class="text-md text-gray-300">Senin</span>
+                <span class="text-md text-gray-300">Selasa</span>
+                <span class="text-md text-gray-300">Rabu</span>
+                <span class="text-md text-gray-300">Kamis</span>
+                <span class="text-md text-gray-300">Jumat</span>
+                <span class="text-md text-gray-300">Sabtu</span>
+                <span class="text-md text-gray-300">Minggu</span>
+              </div>
+              <div class="flex flex-col gap-2">
+                <span class="text-md text-gray-300">9:00 - 20:00</span>
+                <span class="text-md text-gray-300">9:00 - 20:00</span>
+                <span class="text-md text-gray-300">9:00 - 20:00</span>
+                <span class="text-md text-gray-300">9:00 - 20:00</span>
+                <span class="text-md text-gray-300">9:00 - 20:00</span>
+                <span class="text-md text-gray-300">9:00 - 20:00</span>
+                <span class="text-md text-gray-300">9:00 - 20:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-lg font-bold text-white">Newsletter</h2>
+            <div class="flex flex-col gap-2.5">
+              <p class="text-md text-gray-300">Dapatkan informasi dan promo terbaru dari kami.</p>
+              <input type="email" name="email" id="inputEmail" placeholder="Enter Email Address" class="bg-gray-200 p-2 rounded-sm" />
+              <button class="p-2 rounded-sm bg-green-400 text-md font-bold text-white hover:bg-green-300 cursor-pointer">Subscribe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <span class="text-gray-300 text-md text-center">copyright ©2025 <span class="text-gray-300 text-md font-bold">Resto ABC</span> - All rights reserved.</span>
+          <span class="text-gray-700 text-md text-center">thanks for freepik & colorlib</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
